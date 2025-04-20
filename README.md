@@ -1,0 +1,8 @@
+--README--
+--This is a weather app i coded in html css and javascript--
+--when you search a country or a city or state it shows temperature, wind speed, humidity, air pressure and description--
+--made by  help of API opneweather credits to them--
+-- Only shows flags for countries--
+-- search like New York and not like NewYork always have spaces or it will break--
+--Thank You--
+--Credits: OpenWeather API's--
