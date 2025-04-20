@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <h2>Use spaces for like New York or else it will break</h2>
+    <input type="text" id="countryInput" placeholder="Enter city or country name"/>
+<button onclick="getcitycords()">
+    <i class="fas fa-search"></i>
+</button>
+    
+    <div id="weatherInfo" class="weather-card">
+      <div class="weather-info">
+        <p><span>Temperature:</span> <span id="Temperature">Loading...</span></p>
+        <p><span>Humidity:</span> <span id="Humidity">Loading...</span></p>
+        <p><span>Wind Speed:</span> <span id="windspeed">Loading...</span></p>
+        <p><span>Description:</span> <span id="description">Loading...</span></p>
+        <p><span>Air Pressure:</span> <span id="AirPressure">Loading...</span></p>
+      </div>
+    </div>
+    
+    <div id="result">
+      <img id="countryFlag" src="" alt="Country Flag" />
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

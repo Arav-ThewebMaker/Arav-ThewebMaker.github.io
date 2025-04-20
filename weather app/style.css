@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #92ccd4; /* Sky Blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flex container for input and button */
+.input-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between the input and button */
+  width: 100%;
+}
+
+input {
+  padding: 12px;
+  width: 100%; /* Full width for the input field */
+  max-width: 250px; /* Limit the width */
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: flex;
+  padding: 12px 25px;
+  background: #007bff;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 70px;
+  max-width: 100px;
+  align-self: center;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.weather-card {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.weather-info p {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #555;
+}
+
+.weather-info span {
+  font-weight: bold;
+  color: #333;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#countryFlag {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .weather-info {
+    grid-template-columns: 1fr;
+  }
+
+  #countryFlag {
+    max-width: 80%;
+  }
+}
